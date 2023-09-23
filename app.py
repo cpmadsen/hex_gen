@@ -1,9 +1,13 @@
 from pathlib import Path
 import numpy as np
 ## import plotly.graph_objs as go
+# To install the 'shiny' module, use 'pip install https://github.com/posit-dev/py-shiny/tarball/main'
 from shiny import App, reactive, ui
 from htmltools import css, HTML, div
-#import pkgutil
+
+
+# Once a shiny app is being rendered in the simple browser,
+# every time you save the script, the rendered app while automatically refresh.
 
 ## from shinywidgets import output_widget, register_widget
 ## from sklearn.linear_model import LinearRegression
