@@ -1,0 +1,21 @@
+Steps to publish Shiny-python application...
+
+NOTE: At this time, shinyapps.io only supports python 3.7.13, 3.8.13, 3.9.13
+
+1. Install rsconnect-python using pip (can do this in a 
+
+2. Navigate to shinyapps.io; create account if necessary; navigate to 
+   tokens, click on 'With Python'
+
+3. Manually fill in each piece in the following line of code with
+   the value from your token:
+
+rsconnect add --account <ACCOUNT> --name <NAME> --token <TOKEN> --secret <SECRET>
+
+  Then, run that in the terminal.
+
+3. Deploy to shinyapps.io:
+
+# Note, replace 'chrispmadsen' with your profile name on shinyapps.io
+# Note, can change the title (after --title)
+rsconnect deploy shiny ./ --name chrispmadsen  --title HexGen
